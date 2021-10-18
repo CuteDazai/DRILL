@@ -40,4 +40,4 @@ def move_circle():
         
 while True:
     move_circle()
-    move_square()         
+    move_square()
