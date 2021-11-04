@@ -33,9 +33,11 @@ class BigBall:
         self.image.draw(self.x, self.y)
 
     def update(self):
-        if self.y > 55:
-            self.y -= random.randint(10, 20)
+        if self.y >= 80:
+            self.y -= random.randint(10, 100)
             delay(0.001)
+        else:
+            self.y = 80
 
 class SmallBall:
     def __init__(self):
@@ -46,10 +48,11 @@ class SmallBall:
         self.image.draw(self.x, self.y)
 
     def update(self):
-        if self.y > 55:
-            self.y -= random.randint(10, 50)
+        if self.y- >= 70:
+            self.y -= random.randint(10, 100)
             delay(0.001)
-
+        else:
+            self.y = 70
 def handle_events():
     global running
     events = get_events()
